@@ -23,8 +23,8 @@ This project demonstrates a basic authentication system with the following featu
 ```sh
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
-2. Install dependencies
-sh
+### 2. Install dependencies
+```sh
 Copy code
 npm install
 3. Configure environment variables
