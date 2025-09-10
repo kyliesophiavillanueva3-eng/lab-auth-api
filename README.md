@@ -44,8 +44,6 @@ JWT_EXPIRES=1h
 ### 4. Setup MySQL tables
 Run the following SQL queries in your MySQL database:
 
-sql
-Copy code
 CREATE DATABASE IF NOT EXISTS lab_auth;
 
 USE lab_auth;
@@ -65,7 +63,7 @@ CREATE TABLE revoked_tokens (
   expires_at DATETIME NOT NULL
 );
 ### 5. Start the server
-Copy code
+
 npm run dev
 Server will run at: http://localhost:3000
 
@@ -77,8 +75,6 @@ Authentication
 POST /api/auth/signup → register a new user
 Body:
 
-json
-Copy code
 {
   "email": "user@example.com",
   "password": "Pass@1234",
@@ -88,8 +84,6 @@ Copy code
 POST /api/auth/login → login and receive JWT
 Body:
 
-json
-Copy code
 {
   "email": "user@example.com",
   "password": "Pass@1234"
@@ -97,15 +91,11 @@ Copy code
 POST /api/auth/logout → revoke token
 Header:
 
-makefile
-Copy code
 Authorization: Bearer <token>
 Profile (Protected)
 GET /api/profile → get logged-in user info
 Header:
 
-makefile
-Copy code
 Authorization: Bearer <token>
 🧪 Negative Test Cases
 Duplicate signup → 409 Conflict
