@@ -24,10 +24,9 @@ This project demonstrates a basic authentication system with the following featu
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 ### 2. Install dependencies
-```sh
 Copy code
 npm install
-3. Configure environment variables
+### 3. Configure environment variables
 Create a .env file in the project root and add:
 
 ini
@@ -42,7 +41,7 @@ SERVER_PORT=3000
 
 JWT_SECRET=replace_with_a_long_random_string
 JWT_EXPIRES=1h
-4. Setup MySQL tables
+### 4. Setup MySQL tables
 Run the following SQL queries in your MySQL database:
 
 sql
@@ -65,8 +64,7 @@ CREATE TABLE revoked_tokens (
   jti VARCHAR(64) NOT NULL UNIQUE,
   expires_at DATETIME NOT NULL
 );
-5. Start the server
-sh
+### 5. Start the server
 Copy code
 npm run dev
 Server will run at: http://localhost:3000
