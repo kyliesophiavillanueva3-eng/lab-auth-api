@@ -18,7 +18,7 @@ This project demonstrates a basic authentication system:
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone the repository
+1. Clone the repository
 ```sh
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
