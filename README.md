@@ -1,4 +1,6 @@
 "# lab-auth-api" 
+
+
 A simple authentication API built with **Node.js**, **Express**, and **MySQL**.  
 It provides user signup, login, profile access, and logout functionality using **JWT** authentication.
 
