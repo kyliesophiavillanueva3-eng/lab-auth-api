@@ -1,2 +1,2 @@
-"# lab-auth-api" 
+"# lab-auth-joins" 
 "# lab-auth-joins" 
